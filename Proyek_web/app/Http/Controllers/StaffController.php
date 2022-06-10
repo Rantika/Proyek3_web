@@ -50,7 +50,7 @@ class StaffController extends Controller
         $data->salary_amt=$request->salary_amt;
         $data->save();
 
-        return redirect('admin/staff/create')->with('success','Data has been added.');
+        return redirect('admin/staff/create')->with('success','Data berhasil ditambahkan.');
     }
 
     /**
@@ -72,7 +72,7 @@ class StaffController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {   
+    {
         $departs=Department::all();
         $data=Staff::find($id);
         return view('staff.edit',['data'=>$data,'departs'=>$departs]);
@@ -94,7 +94,7 @@ class StaffController extends Controller
         }else{
             $imgPath=$request->prev_photo;
         }
-        
+
         $data->full_name=$request->full_name;
         $data->department_id=$request->department_id;
         $data->photo=$imgPath;
@@ -103,7 +103,7 @@ class StaffController extends Controller
         $data->salary_amt=$request->salary_amt;
         $data->save();
 
-        return redirect('admin/staff/'.$id.'/edit')->with('success','Data has been updated.');
+        return redirect('admin/staff/'.$id.'/edit')->with('success','Data berhasil diupdate.');
     }
 
     /**
@@ -115,7 +115,7 @@ class StaffController extends Controller
     public function destroy($id)
     {
        Staff::where('id',$id)->delete();
-       return redirect('admin/staff')->with('success','Data has been deleted.');
+       return redirect('admin/staff')->with('success','Data berhasil di hapus.');
     }
 
     // All Payments

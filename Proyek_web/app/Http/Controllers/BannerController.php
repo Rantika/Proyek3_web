@@ -54,7 +54,7 @@ class BannerController extends Controller
         $data->publish_status=$request->publish_status;
         $data->save();
 
-        return redirect('admin/banner/create')->with('success','Data has been added.');
+        return redirect('admin/banner/create')->with('success','Data berhasil di tambahkan.');
     }
 
     /**
@@ -109,7 +109,7 @@ class BannerController extends Controller
 
 
 
-        return redirect('admin/banner/'.$id.'/edit')->with('success','Data has been updated.');
+        return redirect('admin/banner/'.$id.'/edit')->with('success','Data berhasil di update.');
     }
 
     /**
@@ -121,6 +121,6 @@ class BannerController extends Controller
     public function destroy($id)
     {
        Banner::where('id',$id)->delete();
-       return redirect('admin/banner')->with('success','Data has been deleted.');
+       return redirect('admin/banner')->with('success','Data berhasil dihapus.');
     }
 }

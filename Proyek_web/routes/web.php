@@ -24,7 +24,7 @@ use App\Http\Controllers\WebController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/',[HomeController::class,'home']);
 Route::get('/service/{id}',[HomeController::class,'service_detail']);
 Route::get('page/about-us',[PageController::class,'about_us']);
 Route::get('page/contact-us',[PageController::class,'contact_us']);
@@ -96,12 +96,6 @@ Route::get('admin/testimonials',[AdminController::class,'testimonials']);
 Route::post('save-contactus',[PageController::class,'save_contactus']);
 
 // Payment
-// Route::get('coba',[WebController::class, 'index']);
-Route::get('/coba', function ($id) {
-
-});
-
-
-Route::get("/data", function() {
-    echo "I";
-});
+Route::post('/data',[WebController::class, 'index']);
+Route::get('/payment',[WebController::class, 'payment']);
+Route::POST('/payment',[WebController::class, 'payment_post']);

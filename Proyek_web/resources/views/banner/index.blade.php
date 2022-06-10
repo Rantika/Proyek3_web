@@ -6,7 +6,7 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Customers
+                            <h6 class="m-0 font-weight-bold text-primary">Banner
                                 <a href="{{url('admin/banner/create')}}" class="float-right btn btn-success btn-sm">Add New</a>
                             </h6>
                         </div>

@@ -41,7 +41,7 @@ class StaffDepartment extends Controller
         $data->detail=$request->detail;
         $data->save();
 
-        return redirect('admin/department/create')->with('success','Data has been added.');
+        return redirect('admin/department/create')->with('success','Data berhasil ditambahkan.');
     }
 
     /**
@@ -63,7 +63,7 @@ class StaffDepartment extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {   
+    {
         $data=Department::find($id);
         return view('department.edit',['data'=>$data]);
     }
@@ -82,7 +82,7 @@ class StaffDepartment extends Controller
         $data->detail=$request->detail;
         $data->save();
 
-        return redirect('admin/department/'.$id.'/edit')->with('success','Data has been updated.');
+        return redirect('admin/department/'.$id.'/edit')->with('success','Data berhasil diupdate.');
     }
 
     /**
@@ -94,6 +94,6 @@ class StaffDepartment extends Controller
     public function destroy($id)
     {
        Department::where('id',$id)->delete();
-       return redirect('admin/department')->with('success','Data has been deleted.');
+       return redirect('admin/department')->with('success','Data berhasil dihapus.');
     }
 }

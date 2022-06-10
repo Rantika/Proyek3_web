@@ -6,8 +6,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Add Customer
-                                <a href="{{url('admin/banner')}}" class="float-right btn btn-success btn-sm">View All</a>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambahkan Banner
+                                <a href="{{url('admin/banner')}}" class="float-right btn btn-success btn-sm">Lihat</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -30,7 +30,7 @@
                                             <td><input name="banner_src" type="file" /></td>
                                         </tr>
                                         <tr>
-                                            <th>Alt Text <span class="text-danger">*</span></th>
+                                            <th>Tambahkan text <span class="text-danger">*</span></th>
                                             <td><input name="alt_text" type="text" class="form-control" /></td>
                                         </tr>
                                         <tr>
@@ -40,7 +40,7 @@
                                         <tr>
                                             <td colspan="2">
                                                 <input type="submit" class="btn btn-primary" />
-                                            </td> 
+                                            </td>
                                         </tr>
                                     </table>
                                 </form>
