@@ -6,8 +6,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Add Customer
-                                <a href="{{url('admin/customer')}}" class="float-right btn btn-success btn-sm">View All</a>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambah Customer
+                                <a href="{{url('admin/customer')}}" class="float-right btn btn-success btn-sm">Lihat</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -26,7 +26,7 @@
                                     @csrf
                                     <table class="table table-bordered" >
                                         <tr>
-                                            <th>Full Name <span class="text-danger">*</span></th>
+                                            <th>Nama <span class="text-danger">*</span></th>
                                             <td><input name="full_name" type="text" class="form-control" /></td>
                                         </tr>
                                         <tr>
@@ -38,7 +38,7 @@
                                             <td><input name="password" type="password" class="form-control" /></td>
                                         </tr>
                                         <tr>
-                                            <th>Mobile <span class="text-danger">*</span></th>
+                                            <th>Telepon <span class="text-danger">*</span></th>
                                             <td><input name="mobile" type="text" class="form-control" /></td>
                                         </tr>
                                         <tr>
@@ -46,7 +46,7 @@
                                             <td><input name="photo" type="file" /></td>
                                         </tr>
                                         <tr>
-                                            <th>Address</th>
+                                            <th>Alamat</th>
                                             <td><textarea name="address" class="form-control"></textarea></td>
                                         </tr>
                                         <tr>

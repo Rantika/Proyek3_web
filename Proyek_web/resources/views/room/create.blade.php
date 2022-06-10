@@ -6,8 +6,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Add Room
-                                <a href="{{url('admin/rooms')}}" class="float-right btn btn-success btn-sm">View All</a>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambah Kamar
+                                <a href="{{url('admin/rooms')}}" class="float-right btn btn-success btn-sm">Lihat</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -19,10 +19,10 @@
                                     @csrf
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th>Select Room Type</th>
+                                            <th>Pilih Tipe Kamar</th>
                                             <td>
                                                 <select name="rt_id" class="form-control">
-                                                    <option value="0">--- Select ---</option>
+                                                    <option value="0">--- Pilih ---</option>
                                                     @foreach($roomtypes as $rt)
                                                     <option value="{{$rt->id}}">{{$rt->title}}</option>
                                                     @endforeach
@@ -30,13 +30,13 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Title</th>
+                                            <th>Keterangan</th>
                                             <td><input name="title" type="text" class="form-control" /></td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
                                                 <input type="submit" class="btn btn-primary" />
-                                            </td> 
+                                            </td>
                                         </tr>
                                     </table>
                                 </form>

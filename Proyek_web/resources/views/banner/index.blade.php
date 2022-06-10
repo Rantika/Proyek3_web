@@ -7,7 +7,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Banner
-                                <a href="{{url('admin/banner/create')}}" class="float-right btn btn-success btn-sm">Add New</a>
+                                <a href="{{url('admin/banner/create')}}" class="float-right btn btn-success btn-sm">Tambah</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -20,18 +20,18 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Banner</th>
-                                            <th>Alt Text</th>
+                                            <th>Keterangan</th>
                                             <th>Status</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>#</th>
                                             <th>Banner</th>
-                                            <th>Alt Text</th>
+                                            <th>Keterangan</th>
                                             <th>Status</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

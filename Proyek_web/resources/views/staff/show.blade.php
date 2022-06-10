@@ -7,14 +7,14 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">{{$data->full_name}} Detail
-                                <a href="{{url('admin/staff')}}" class="float-right btn btn-success btn-sm">View All</a>
+                                <a href="{{url('admin/staff')}}" class="float-right btn btn-success btn-sm">Lihat</a>
                             </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" >
                                     <tr>
-                                        <th>Full Name</th>
+                                        <th>Nama</th>
                                         <td>{{$data->full_name}}</td>
                                     </tr>
                                     <tr>
@@ -30,11 +30,11 @@
                                         <td>{{$data->bio}}</td>
                                     </tr>
                                     <tr>
-                                        <th>Salary Type</th>
+                                        <th>Tipe Gaji</th>
                                         <td>{{$data->salary_type}}</td>
                                     </tr>
                                     <tr>
-                                        <th>Salary Amount</th>
+                                        <th>Jumlah Gaji</th>
                                         <td>{{$data->salary_amt}}</td>
                                     </tr>
                                 </table>

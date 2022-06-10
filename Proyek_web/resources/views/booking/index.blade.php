@@ -6,8 +6,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">All Bookings
-                                <a href="{{url('admin/booking/create')}}" class="float-right btn btn-success btn-sm">Add New</a>
+                            <h6 class="m-0 font-weight-bold text-primary">Semua Booking
+                                <a href="{{url('admin/booking/create')}}" class="float-right btn btn-success btn-sm">Tambah</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -20,8 +20,8 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Customer</th>
-                                            <th>Room No.</th>
-                                            <th>Room Type</th>
+                                            <th>Nomor Kamar</th>
+                                            <th>Tipe Kamar</th>
                                             <th>CheckIn Date</th>
                                             <th>CheckOut Date</th>
                                             <th>Ref</th>
@@ -32,12 +32,12 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Customer</th>
-                                            <th>Room No.</th>
-                                            <th>Room Type</th>
+                                            <th>Nomor Kamar</th>
+                                            <th>Tipe Kamar</th>
                                             <th>CheckIn Date</th>
                                             <th>CheckOut Date</th>
                                             <th>Ref</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

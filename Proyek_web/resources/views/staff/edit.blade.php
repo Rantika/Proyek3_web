@@ -7,7 +7,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Update Staff
-                                <a href="{{url('admin/rooms')}}" class="float-right btn btn-success btn-sm">View All</a>
+                                <a href="{{url('admin/rooms')}}" class="float-right btn btn-success btn-sm">Lihat</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -20,14 +20,14 @@
                                     @csrf
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th>Full Name</th>
+                                            <th>Nama</th>
                                             <td><input value="{{$data->full_name}}" name="full_name" type="text" class="form-control" /></td>
                                         </tr>
                                         <tr>
-                                            <th>Select Department</th>
+                                            <th>Pilih Department</th>
                                             <td>
                                                 <select name="department_id" class="form-control">
-                                                    <option value="0">--- Select ---</option>
+                                                    <option value="0">--- Pilih ---</option>
                                                     @foreach($departs as $dp)
                                                     <option @if($data->id==$dp->id) selected @endif value="{{$dp->id}}">{{$dp->title}}</option>
                                                     @endforeach
@@ -39,7 +39,7 @@
                                             <td>
                                                 <input name="photo" type="file" />
                                                 <input type="hidden" value="{{$data->photo}}" name="prev_photo" />
-                                                <img width="80" src="{{asset('storage/app/'.$data->photo)}}" />
+                                                <img width="80" src="{{asset('/storage/'.$data->photo)}}" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -47,20 +47,20 @@
                                             <td><textarea class="form-control" name="bio">{{$data->bio}}</textarea></td>
                                         </tr>
                                         <tr>
-                                            <th>Salary Type</th>
+                                            <th>Jenis Gaji</th>
                                             <td>
-                                                <input @if($data->salary_type=='daily') checked @endif type="radio" name="salary_type" value="daily"> Daily
-                                                <input @if($data->salary_type=='monthly') checked @endif type="radio" name="salary_type" value="monthly"> Monthly
+                                                <input @if($data->salary_type=='daily') checked @endif type="radio" name="salary_type" value="daily"> Harian
+                                                <input @if($data->salary_type=='monthly') checked @endif type="radio" name="salary_type" value="monthly"> Bulanan
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Salary Amount</th>
+                                            <th>Jumlah Gaji</th>
                                             <td><input value="{{$data->salary_amt}}" name="salary_amt" class="form-control" type="number" /></td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
                                                 <input type="submit" class="btn btn-primary" />
-                                            </td> 
+                                            </td>
                                         </tr>
                                     </table>
                                 </form>

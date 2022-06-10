@@ -6,8 +6,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Roomtypes
-                                <a href="{{url('admin/roomtype/create')}}" class="float-right btn btn-success btn-sm">Add New</a>
+                            <h6 class="m-0 font-weight-bold text-primary">Type Kamar
+                                <a href="{{url('admin/roomtype/create')}}" class="float-right btn btn-success btn-sm">Tambah</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -19,19 +19,19 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Title</th>
-                                            <th>Price</th>
+                                            <th>Nama Kamar</th>
+                                            <th>Harga</th>
                                             <th>GalleryImages</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>#</th>
-                                            <th>Title</th>
-                                            <th>Price</th>
+                                            <th>Nama Kamar</th>
+                                            <th>Harga</th>
                                             <th>GalleryImages</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

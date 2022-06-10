@@ -30,7 +30,7 @@
                                             <td><input name="banner_src" type="file" /></td>
                                         </tr>
                                         <tr>
-                                            <th>Tambahkan text <span class="text-danger">*</span></th>
+                                            <th>Keterangan <span class="text-danger">*</span></th>
                                             <td><input name="alt_text" type="text" class="form-control" /></td>
                                         </tr>
                                         <tr>

@@ -15,6 +15,7 @@ class WebController extends Controller
             'kamar'         => $request->room_id,
             'dewasa'        => $request->total_adults,
             'anak'          => $request->total_children,
+            'roomprice'          => $request->roomprice,
         ]);
 
         return view('payment/index');

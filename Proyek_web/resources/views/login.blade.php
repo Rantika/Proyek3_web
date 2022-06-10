@@ -35,7 +35,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="background:url({{asset('img/hotel.png')}}); background-position: center; background-size: cover;"></div>
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image" style="background:url({{asset('img/foto.jpeg')}}); background-position: center; background-size: cover;"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
@@ -55,8 +55,6 @@
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
 <input type="checkbox" @if(Cookie::has('adminuser')) checked @endif name="rememberme" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
                                             </div>
                                         </div>
                                         <input type="submit" class="btn btn-primary btn-user btn-block" value="Login" />

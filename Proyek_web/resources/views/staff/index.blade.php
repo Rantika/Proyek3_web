@@ -7,7 +7,7 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Staff
-                                <a href="{{url('admin/staff/create')}}" class="float-right btn btn-success btn-sm">Add New</a>
+                                <a href="{{url('admin/staff/create')}}" class="float-right btn btn-success btn-sm">Tambah</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -19,19 +19,19 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Full Name</th>
+                                            <th>Nama</th>
                                             <th>Photo</th>
                                             <th>Department</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>#</th>
-                                            <th>Full Name</th>
+                                            <th>Nama</th>
                                             <th>Photo</th>
                                             <th>Department</th>
-                                            <th>Action</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

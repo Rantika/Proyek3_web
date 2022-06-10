@@ -7,14 +7,14 @@
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Service Detail
-                                <a href="{{url('admin/service')}}" class="float-right btn btn-success btn-sm">View All</a>
+                                <a href="{{url('admin/service')}}" class="float-right btn btn-success btn-sm">Lihat</a>
                             </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" >
                                     <tr>
-                                        <th>Title</th>
+                                        <th>Jabtan</th>
                                         <td>{{$data->title}}</td>
                                     </tr>
                                     <tr>
@@ -22,7 +22,7 @@
                                         <td><img width="100" src="{{asset('storage/app/'.$data->photo)}}" /></td>
                                     </tr>
                                     <tr>
-                                        <th>Small Detail</th>
+                                        <th>Detail</th>
                                         <td>{{$data->small_desc}}</td>
                                     </tr>
                                     <tr>

@@ -6,8 +6,8 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Add Staff
-                                <a href="{{url('admin/staff')}}" class="float-right btn btn-success btn-sm">View All</a>
+                            <h6 class="m-0 font-weight-bold text-primary">Tambah Staff
+                                <a href="{{url('admin/staff')}}" class="float-right btn btn-success btn-sm">Lihat</a>
                             </h6>
                         </div>
                         <div class="card-body">
@@ -19,14 +19,14 @@
                                     @csrf
                                     <table class="table table-bordered">
                                         <tr>
-                                            <th>Full Name</th>
+                                            <th>Nama</th>
                                             <td><input name="full_name" type="text" class="form-control" /></td>
                                         </tr>
                                         <tr>
-                                            <th>Select Department</th>
+                                            <th>Pilih Department</th>
                                             <td>
                                                 <select name="department_id" class="form-control">
-                                                    <option value="0">--- Select ---</option>
+                                                    <option value="0">--- Pilih ---</option>
                                                     @foreach($departs as $dp)
                                                     <option value="{{$dp->id}}">{{$dp->title}}</option>
                                                     @endforeach
@@ -42,20 +42,20 @@
                                             <td><textarea class="form-control" name="bio"></textarea></td>
                                         </tr>
                                         <tr>
-                                            <th>Salary Type</th>
+                                            <th>Jenis Gaji</th>
                                             <td>
-                                                <input type="radio" name="salary_type" value="daily"> Daily
-                                                <input type="radio" name="salary_type" value="monthly"> Monthly
+                                                <input type="radio" name="salary_type" value="daily">Harian
+                                                <input type="radio" name="salary_type" value="monthly"> Bulanan
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>Salary Amount</th>
+                                            <th>Jumlah Gaji</th>
                                             <td><input name="salary_amt" class="form-control" type="number" /></td>
                                         </tr>
                                         <tr>
                                             <td colspan="2">
                                                 <input type="submit" class="btn btn-primary" />
-                                            </td> 
+                                            </td>
                                         </tr>
                                     </table>
                                 </form>
