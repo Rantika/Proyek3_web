@@ -23,7 +23,7 @@
                                     </tr>
                                     <tr>
                                         <th>Photo</th>
-                                        <td><img width="80" src="{{asset('storage/app/'.$data->photo)}}" /></td>
+                                        <td><img width="80" src="{{asset('storage/app/public/'.$data->photo)}}" /></td>
                                     </tr>
                                     <tr>
                                         <th>Bio</th>

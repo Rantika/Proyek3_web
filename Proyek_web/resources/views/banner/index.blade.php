@@ -39,7 +39,7 @@
                                             @foreach($data as $d)
                                             <tr>
                                                 <td>{{$d->id}}</td>
-                                                <td><img width="100" src="{{url('/storage/'.$d->banner_src)}}" /></td>
+                                                <td><img width="100" src="{{url('/storage/app/public/'.$d->banner_src)}}" /></td>
                                                 <td>{{$d->alt_text}}</td>
                                                 <td>{{$d->publish_status}}</td>
                                                 <td>
@@ -60,13 +60,13 @@
 
 @section('scripts')
 <!-- Custom styles for this page -->
-<link href="{{asset('public')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="{{asset('/public')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 <!-- Page level plugins -->
-<script src="{{asset('public')}}/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="{{asset('public')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="{{asset('/public')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="{{asset('/public')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="{{asset('public')}}/js/demo/datatables-demo.js"></script>
+<script src="{{asset('/public')}}/js/demo/datatables-demo.js"></script>
 
 @endsection
 

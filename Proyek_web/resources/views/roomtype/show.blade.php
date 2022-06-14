@@ -32,7 +32,7 @@
                                                 <tr>
                                                     @foreach($data->roomtypeimgs as $img)
                                                     <td class="imgcol{{$img->id}}">
-                                                        <img width="150" src="{{asset('storage/app/'.$img->img_src)}}" />
+                                                        <img width="150" src="{{asset('storage/app/public'.$img->img_src)}}" />
                                                     </td>
                                                     @endforeach
                                                 </tr>

@@ -144,7 +144,7 @@
                 <!-- /.container-fluid -->
 
 <!-- Page level plugins -->
-<script src="{{url('')}}/vendor/chart.js/Chart.min.js"></script>
+<script src="{{url('/public')}}/vendor/chart.js/Chart.min.js"></script>
 
 <script type="text/javascript">
     var _labels={!! json_encode($labels) !!};
@@ -154,7 +154,7 @@
     var _pdata={!! json_encode($pdata) !!};
 </script>
 <!-- Page level custom scripts -->
-<script src="{{url('')}}/js/demo/chart-area-demo.js"></script>
-<script src="{{url('')}}/js/demo/chart-pie-demo.js"></script>
+<script src="{{url('/public')}}/js/demo/chart-area-demo.js"></script>
+<script src="{{url('/public')}}/js/demo/chart-pie-demo.js"></script>
 
 @endsection

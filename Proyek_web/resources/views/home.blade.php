@@ -5,7 +5,7 @@
 	  <div class="carousel-inner">
 	  	@foreach($banners as $index => $banner)
 	    <div class="carousel-item @if($index==0) active @endif">
-	      <img src="{{asset('storage/'.$banner->banner_src)}}" class="d-block w-100" alt="{{$banner->alt_text}}">
+	      <img src="{{asset('storage/app/public/'.$banner->banner_src)}}" class="d-block w-100" alt="{{$banner->alt_text}}">
 	    </div>
 	    @endforeach
 	  </div>
@@ -26,7 +26,7 @@
 		@foreach($services as $service)
 		<div class="row my-4">
 			<div class="col-md-3">
-				<a href="{{url('service/'.$service->id)}}"><img class="img-thumbnail" style="width:100%;" src="{{asset('storage/'.$service->photo)}}" /></a>
+				<a href="{{url('service/'.$service->id)}}"><img class="img-thumbnail" style="width:100%;" src="{{asset('storage/app/public/'.$service->photo)}}" /></a>
 			</div>
 			<div class="col-md-8">
 				<h3>{{$service->title}}</h3>
@@ -49,11 +49,11 @@
 					<h5 class="card-header">{{$rtype->title}}</h5>
 					<div class="card-body">
 						@foreach($rtype->roomtypeimgs as $index => $img)
-                        	<a href="{{asset('storage/'.$img->img_src)}}" data-lightbox="rgallery{{$rtype->id}}">
+                        	<a href="{{asset('storage/app/public/'.$img->img_src)}}" data-lightbox="rgallery{{$rtype->id}}">
                         		@if($index > 0)
-                        		<img class="img-fluid hide" src="{{asset('storage/'.$img->img_src)}}" />
+                        		<img class="img-fluid hide" src="{{asset('storage/app/public/'.$img->img_src)}}" />
                         		@else
-                        		<img class="img-fluid" src="{{asset('storage/'.$img->img_src)}}" />
+                        		<img class="img-fluid" src="{{asset('storage/app/public/'.$img->img_src)}}" />
                         		@endif
                         	</a>
                         </td>
@@ -95,9 +95,9 @@
 	<!-- Slider Section End -->
 1
 <!-- LightBox css -->
-<link rel="stylesheet" type="text/css" href="{{asset('public/vendor')}}/lightbox2-2.11.3/dist/css/lightbox.min.css" />
+<link rel="stylesheet" type="text/css" href="{{asset('/public/vendor/')}}/lightbox2-2.11.3/dist/css/lightbox.min.css" />
 <!-- LightBox Js -->
-<script type="text/javascript" src="{{asset('public/vendor')}}/lightbox2-2.11.3/dist/js/lightbox.min.js"></script>
+<script type="text/javascript" src="{{asset('/public/vendor/')}}/lightbox2-2.11.3/dist/js/lightbox.min.js"></script>
 <style type="text/css">
 	.hide{
 		display: none;

@@ -31,7 +31,7 @@
                                             <td>
                                                 <input name="banner_src" type="file" />
                                                 <input type="hidden" name="prev_photo" value="{{$data->banner_src}}" />
-                                                <img width="100" src="{{asset('storage/app/'.$data->banner_src)}}" />
+                                                <img width="100" src="{{asset('/storage/app/public/'.$data->banner_src)}}" />
                                             </td>
                                         </tr>
                                         <tr>

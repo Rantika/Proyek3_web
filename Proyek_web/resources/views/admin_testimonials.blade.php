@@ -52,13 +52,13 @@
 
 @section('scripts')
 <!-- Custom styles for this page -->
-<link href="{{asset('public')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="{{asset('/public')}}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 <!-- Page level plugins -->
-<script src="{{asset('public')}}/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="{{asset('public')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="{{asset('/public')}}/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="{{asset('/public')}}/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="{{asset('public')}}/js/demo/datatables-demo.js"></script>
+<script src="{{asset('/public')}}/js/demo/datatables-demo.js"></script>
 
 @endsection
 

@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Home Page</title>
-	<link href="{{asset('/bs5/bootstrap.min.css')}}" rel="stylesheet" />
-	<script type="text/javascript" src="{{asset('/vendor/jquery/jquery.min.js')}}"></script>
-	<script type="text/javascript" src="{{asset('/bs5/bootstrap.bundle.min.js')}}"></script>
+	<link href="{{asset('public/bs5/bootstrap.min.css')}}" rel="stylesheet" />
+	<script type="text/javascript" src="{{asset('/public/vendor/jquery/jquery.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('/public/bs5/bootstrap.bundle.min.js')}}"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
