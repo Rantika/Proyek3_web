@@ -16,11 +16,12 @@
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	      <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="{{url('/')}}">Home</a>
 	        <a class="nav-link" aria-current="page" href="{{url('/')}}#services">Service</a>
 	        <a class="nav-link" href="{{url('/')}}#gallery">Gallery</a>
 	        <a class="nav-link" href="{{url('page/about-us')}}">Tentang Hotel</a>
 	        @if(Session::has('customerlogin'))
-	        <a class="nav-link" href="{{url('customer/add-testimonial')}}">Penilaian</a>
+	        <a class="nav-link" href="{{url('customer/add-testimonial')}}">Testimoni</a>
 	        <a class="nav-link" href="{{url('logout')}}">Logout</a>
 	        <a class="nav-link btn btn-sm btn-danger" href="{{url('booking')}}">Booking</a>
 	        @else
